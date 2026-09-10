@@ -4,6 +4,7 @@ from fastapi import FastAPI
 
 from app.config import settings
 from app.routes import health, items, version
+
 #api fast
 app = FastAPI(
     title="Pipeline Craft API",
