@@ -8,7 +8,7 @@ class ItemCreate(BaseModel):
 
     name: str = Field(..., min_length=1, max_length=100, examples=["Widget Alpha"])
     description: str = Field(
-        default="", max_length=500, examples=["Un composant essentiel"]
+        default="", max_length=300, examples=["Un composant essentiel"]
     )
     price: float = Field(..., gt=0, examples=[29.99])
 
