@@ -41,6 +41,11 @@ jobs:
 
 
       - run: pip install -r requirements-dev.txt
+      - name: Étape avec retry automatique
+        uses: nick-fields/retry@v3
+        with:
+         timeout_minutes: 5
+         max_attempts: 3
 
 
    
